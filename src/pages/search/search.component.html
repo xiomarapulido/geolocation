@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Filtrar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+        <ion-searchbar placeholder="Documento">
+      </ion-searchbar>
+      <ion-item no-lines>
+          <ion-label>Buscar por fecha</ion-label>
+          <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+        </ion-item>
+      <ion-item>
+        <ion-label>Fecha de regístro</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+      </ion-item>
+</ion-content>
+
+<!-- <ion-menu [content]="mycontent">
+  <ion-header>
+    <ion-navbar color="primary">
+      <ion-title>
+        Filtrar
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-searchbar placeholder="Documento">
+  </ion-searchbar>
+  <ion-item>
+    <ion-label>Fecha de regístro</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+  </ion-item>
+
+</ion-menu> -->
+
+<!-- <ion-nav #mycontent [root]="tab2Root"></ion-nav> -->
+
+<!-- Imput calendar -->
+<!-- <ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+</ion-item> -->

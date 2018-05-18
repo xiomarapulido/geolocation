@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Registrar localización</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <ion-card-content>
+            <ion-item>
+                <ion-label floating>Latitud:</ion-label>
+                <ion-input type="text" value="{{latitude}}" [disabled]="true"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Longitud:</ion-label>
+                <ion-input type="text" value="{{longitude}}" [disabled]="true"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Número de documento:</ion-label>
+                <ion-input type="number" min="0" name="cardId" id="cardId" [(ngModel)]="cardId"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Correo electrónico:</ion-label>
+                <ion-input type="text" name="email" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <button (click)="addLocation()" ion-button icon-left class="button-block">
+                <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+                Guardar
+            </button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
