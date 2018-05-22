@@ -1,8 +1,8 @@
 {
   "name": "challengeLocation",
-  "app_id": "",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "app_id": "a12b6169"
 }
